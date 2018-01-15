@@ -1,0 +1,62 @@
+extends template
+
+block content
+    #navbar 
+        a(href='/')
+            span Dorm Supplies
+        #nb-items
+            .tab
+                button.tablinks(onclick="openTab(event, 'Register')") Register
+                button.tablinks(onclick="openTab(event, 'Login')") Login        
+
+
+
+    #Register.tabcontent
+        form
+            .form-box
+                h2 Register
+                .fb-item
+                    span Name
+                    br
+                    input(type='text' name='name' placeholder='Name')
+                .fb-item
+                    span Email
+                    br
+                    input(type='email' name='email' placeholder='Email') 
+                .fb-item
+                    span Class
+                    br
+                    input(type='number' name='classYear' placeholder='Class year') 
+                .fb-item
+                    span Phone
+                    br
+                    input(type='phone' name='phone' placeholder='Phone Number')
+                .fb-item
+                    span Address
+                    br
+                    input(type='address' name='address' placeholder='Address')
+                .fb-item
+                    span Password
+                    br
+                    input(type='password' name='password' placeholder='Password')
+                .fb-item
+                    span Confirm
+                    br
+                    input(type='password' name='confirm' placeholder='Confirm')
+                button.button(type="button" onclick='register()') submit it boi
+
+    #Login.tabcontent
+        form
+            .form-box
+                h2 Login
+                .fb-item
+                    span Email
+                    br
+                    input(type='email' name='email' placeholder='Email') 
+                .fb-item
+                    span Password
+                    br
+                    input(type='password' name='password' placeholder='Password')
+                button.button(type="button" onclick='login()') login ya bi$h
+        
+
