@@ -8,4 +8,8 @@ router.get('/', (req, res, next) => {
     return res.render('index');
 });
 
+router.get('/room', (req, res, next) => {
+    return res.render('room');
+});
+
 module.exports = router;

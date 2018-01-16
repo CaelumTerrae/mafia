@@ -1,4 +1,42 @@
 extends template
 
 block content
-	
+	script.
+		window.onload = function(){
+			makeYou()
+			makeThem()
+		}
+	#you
+		div(id="youricon")
+			img(id="your_icon_img")
+	#them
+		div(id="theiricons")
+			table
+				thead
+					tr
+						td 
+				tbody
+					tr
+						td 
+							img(id="icon_user_2")
+						td 
+							img(id="icon_user_3")
+						td
+						td 
+							img(id="icon_user_4")
+						td 
+							img(id="icon_user_5")
+					tr
+						td
+							img(id="icon_user_6")
+						td
+							img(id="icon_user_7")
+						td
+							img(id="icon_user_8")
+						td
+							img(id="icon_user_9")
+						td
+							img(id="icon_user_10")
+
+	#chatbox
+		div(id="chat")
