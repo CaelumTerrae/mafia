@@ -1,9 +1,22 @@
 doctype html
 html
   head
-    title= title || "Dorm Supplies"
+    title= title || "Mafia"
+    style.
+        body {
+            background: #000000
+        }
+    style(type='text/css').
+        .form-box {
+             position relative
+              width 50%
+              margin 0px 25%
+              box-shadow 0px 0px 20px #CCC
+              padding 30px        
+              border}
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/js/fetch.js')
+
   body
     block content
     script(src='/js/script.min.js')
