@@ -1,21 +1,20 @@
 extends template
 
 block content
+    h1 ENTER MAFIA
+    #index
+        img(src="/img/mafia.png")
     form
         .form-box
-            h2 Enter a Room
             .fb-item
-                span Room Name
                 br
                 input(type='string' name='roomName' placeholder='Room Name')
             .fb-item
-                span Password
                 br
-                input(type='password' name='password' placeholder='*****')
+                input(type='password' name='password' placeholder='Password')
             .fb-item
-                span Nickname
                 br
                 input(type='string' name='nickname' placeholder='nickname')
-            button#submit(type='button') Submit
+            button#submit(type='button') SUBMIT
         
 
