@@ -1,11 +1,20 @@
 extends template
 
 block content
-	script.
-		window.onload = function(){
-			makeYou()
-			makeThem()
-		}
+	//- script.
+	//- 	socket.on("update", function(players) {
+	//- 			localStorage.players = JSON.stringify(players)
+	//- 			makeYou()
+	//- 			makeThem()
+	//- 			if (localStorage.night === "true") {
+	//- 				localStorage.night = "false"
+	//- 				toDay()
+	//- 			}
+	//- 			else{
+	//- 				localStorage.night = "true"
+	//- 				toNight()
+	//- 			}
+	//- 		})
 	#you
 		div(id="youricon")
 			img(id="your_icon_img")
@@ -17,6 +26,16 @@ block content
 						td 
 				tbody
 					tr
+						td
+							p(id="name_user_2")
+						td
+							p(id="name_user_3")
+						td
+						td
+							p(id="name_user_4")
+						td
+							p(id="name_user_5")
+					tr
 						td 
 							img(id="icon_user_2")
 						td 
@@ -26,6 +45,17 @@ block content
 							img(id="icon_user_4")
 						td 
 							img(id="icon_user_5")
+					tr
+						td
+							p(id="name_user_6")
+						td
+							p(id="name_user_7")
+						td
+							p(id="name_user_8")
+						td
+							p(id="name_user_9")
+						td
+							p(id="name_user_10")
 					tr
 						td
 							img(id="icon_user_6")

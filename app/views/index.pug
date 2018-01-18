@@ -3,7 +3,7 @@ extends template
 block content
     h1 ENTER MAFIA
     #index
-        img(src="/img/mafia.png")
+        img(id="indexpic" src="/img/mafia.png")
     form
         .form-box
             .fb-item
@@ -15,6 +15,6 @@ block content
             .fb-item
                 br
                 input(type='string' name='nickname' placeholder='nickname')
-            button#submit(type='button') SUBMIT
+            button#submit(type='button' onclick='register2()') SUBMIT
         
 

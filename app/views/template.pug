@@ -19,9 +19,8 @@ html
 
   body
     block content
-    #title
-      h1 MAFIA
-    script(src='/js/script.min.js') 
+    script(src='/js/script.min.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js") 
     if token
         script localStorage.token = "#{token}"
     block postScript
